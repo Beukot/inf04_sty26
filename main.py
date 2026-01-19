@@ -1,6 +1,7 @@
 import random
 import unittest
 
+# nie wiem czy muszę tu opisywać jakieś rzeczy
 
 class Kosc:
     liczba_instancji = 0
@@ -58,6 +59,9 @@ kosc2.wypisz_wynik()
 class testy_jednostkowe(unittest.TestCase):
     def test_obrazy_kosci(self):
         kosc3 = Kosc()
+
+        # jak nie rozumiesz bo przypomina strzałki z reacta to chodzi o to że:
+        # 1 mniejsze równe od kosc3.wartosc mniejsze równe od 6
         self.assertTrue(1 <= kosc3.wartosc <= 6)
     def test_czy_wartosc_zostaje_po_blokadzie(self):
         kosc4 = Kosc(3)
